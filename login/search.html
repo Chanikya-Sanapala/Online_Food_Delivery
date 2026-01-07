@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search - Food Delivery</title>
+  <link rel="stylesheet" href="search.css">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h2>🔍 Food Search</h2>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="searchBox" placeholder="Search for food...">
+    <button onclick="performSearch()"><i class="fas fa-search"></i></button>
+  </div>
+
+  <!-- Suggested Results -->
+  <div id="results" class="results"></div>
+
+  <!-- Footer Navigation -->
+  <footer class="footer-nav">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+    <a href="favs.html"><i class="fas fa-heart"></i> Favs</a>
+    <a href="setting.html"><i class="fas fa-sliders-h"></i> Settings</a>
+  </footer>
+
+  <script src="search.js"></script>
+</body>
+</html>

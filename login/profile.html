@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Dashboard</title>
+  <link rel="stylesheet" href="styless.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="profile-header">
+      <div class="profile-info">
+        <div class="avatar" id="avatar">U</div>
+        <div class="details">
+          <h2 id="username">User Name</h2>
+          <p id="email">user@example.com</p>
+          <a href="#">View activity</a>
+        </div>
+      </div>
+      <div class="membership">
+        <span class="badge" id="membership">Member</span>
+        <span class="savings" id="savings">Saved ₹0</span>
+      </div>
+    </header>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#" id="wallet">Money ₹0</a></li>
+        <li><a href="profile change.html">Your profile <span class="progress" id="progress">0% completed</span></a></li>
+        <li>
+          <a href="#" id="dark-mode-toggle">
+            Dark Mode
+            <span class="toggle" id="dark-toggle"></span>
+          </a>
+        </li>
+        <li><a href="#">Your rating <span class="rating" id="rating">0.00</span></a></li>
+      </ul>
+    </nav>
+
+    <section class="orders-section">
+      <h3>Food Orders</h3>
+      <ul>
+        <li><a href="#">Your orders</a></li>
+        <li><a href="#">Favorite orders</a></li>
+        <li><a href="#">Order on train</a></li>
+        <li><a href="#">Address book</a></li>
+        <li><a href="#">Hidden Restaurants</a></li>
+        <li><a href="#">Online ordering help</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

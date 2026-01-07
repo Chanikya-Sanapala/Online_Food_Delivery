@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register & Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Sign Up Form -->
+  <div class="container" id="signup" style="display:none;">
+    <h1>Register</h1>
+    <form method="post" action="register.php">
+      <input type="text" name="fName" placeholder="First Name" required>
+      <input type="text" name="lName" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Sign Up" name="signUp">
+    </form>
+    <p>Already have an account? <button id="signInButton">Sign In</button></p>
+  </div>
+
+  <!-- Sign In Form -->
+  <div class="container" id="signIn">
+    <h1>Sign In</h1>
+    <form method="post" action="login.php">
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Sign In" name="signIn">
+    </form>
+    <p>Don’t have an account? <button id="signUpButton">Sign Up</button></p>
+  </div>
+
+  <script src="log.js"></script>
+</body>
+</html>

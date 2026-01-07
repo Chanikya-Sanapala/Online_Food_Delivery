@@ -1,0 +1,135 @@
+/* -------------------------
+   Global
+-------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* -------------------------
+   Header
+-------------------------- */
+.fav-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fav-header h1 {
+  font-size: 2rem;
+  color: #ff7a00;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+/* -------------------------
+   Favorites Grid
+-------------------------- */
+.fav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* -------------------------
+   Favorite Card
+-------------------------- */
+.fav-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.fav-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.fav-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.fav-content {
+  padding: 15px;
+}
+
+.fav-content h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.fav-content p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #ff7a00;
+  font-weight: 600;
+}
+
+.price {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #ff4444;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: right;
+  transition: color 0.2s ease;
+}
+
+.remove-btn:hover {
+  color: #ff0000;
+}
+
+/* -------------------------
+   Dark Mode
+-------------------------- */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .fav-card {
+  background: #1f1f1f;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .fav-header h1 {
+  color: #ffb347;
+}
+
+body.dark-mode .remove-btn {
+  color: #ff6666;
+}
